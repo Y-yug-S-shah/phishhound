@@ -1,4 +1,4 @@
-## 🐍 PhishHound++ – Rule-Based Email Header Analyzer for Phishing Detection
+## 🐍 PhishHound – Rule-Based Email Header Analyzer for Phishing Detection
 
 > A lightweight Python CLI tool designed to parse and analyze email headers using rule-based logic. Built for blue teamers, SOC analysts, and threat detection engineers to triage suspicious email reports efficiently.
 
@@ -19,7 +19,7 @@
 ### 📦 Folder Layout
 
 ```
-phishhound++/
+phishhound/
 │
 ├── main.py                      # CLI entry point with banner UI
 ├── requirements.txt             # Minimal dependencies
