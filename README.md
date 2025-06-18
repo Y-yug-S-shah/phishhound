@@ -147,6 +147,13 @@ Reasons:
 
 ---
 
+### 🖥️ Example Output
+
+![CLI Tool Banner](assets/screenshot_main_cli.png)
+![Header Analysis Output](assets/screenshot_sample_output.png)
+
+---
+
 ### 🧠 Built with
 
 * **Python 3.8+**
