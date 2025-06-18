@@ -1,0 +1,11 @@
+Return-Path: <no-reply@secure-verify-online.xyz>
+From: "Dropbox Security Alert" <no-reply@dropbox.com>
+Reply-To: verify@secure-verify-online.xyz
+Received: from mail.secure-verify-online.xyz (mail.secure-verify-online.xyz. [198.51.100.45])
+        by mx.yahoo.com with SMTP id def456uvw
+        for <user@example.com>;
+        Wed, 18 Jun 2025 11:45:00 -0400 (EDT)
+Authentication-Results: mx.yahoo.com;
+       spf=fail (yahoo.com: domain of secure-verify-online.xyz does not designate 198.51.100.45 as permitted sender);
+       dkim=fail header.d=secure-verify-online.xyz;
+       dmarc=none (policy not enabled)
