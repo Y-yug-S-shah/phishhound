@@ -1,0 +1,11 @@
+Return-Path: <alerts@bankofamerica.com>
+From: Bank of America <alerts@bankofamerica.com>
+Reply-To: support@bankofamerica.com
+Received: from mail.bankofamerica.com (mail.bankofamerica.com. [2606:4700::6810:5b73])
+        by mx.google.com with ESMTPS id abc123xyz
+        for <user@example.com>;
+        Wed, 18 Jun 2025 09:15:00 -0500 (CDT)
+Authentication-Results: mx.google.com;
+       spf=pass (google.com: domain of bankofamerica.com designates 2606:4700::6810:5b73 as permitted sender);
+       dkim=pass header.d=bankofamerica.com header.s=k1 header.b=abcDef123;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=bankofamerica.com
