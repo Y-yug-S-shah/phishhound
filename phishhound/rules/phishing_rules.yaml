@@ -1,0 +1,38 @@
+rules:
+  - name: OpenPhish domain (Cloudflare)
+    type: from
+    # Matches common phishing domains seen in recent OpenPhish lists
+    pattern: "(?i)\\b(openphish\\.com|secure-signin\\.|account-verification\\.|login-update\\.)"
+    weight: 3
+    reason: From domain matches recent OpenPhish phishing indicators
+
+  - name: PhishTank suspicious URL pattern
+    type: reply_to
+    pattern: "(?i)\\b(phishtank\\.org|suspicious-login\\.|validate-account\\.)"
+    weight: 2
+    reason: Reply-To contains known phishing patterns
+
+  - name: New-domain email field mismatch
+    type: return_path
+    # Hits newer domains often used in phishing kits
+    pattern: "(?i)@[a-z0-9\\-]{10,}\\.(xyz|top|icu|site|online)"
+    weight: 3
+    reason: Return-Path has suspicious newly registered TLD/domain
+
+  - name: Generic phishing keywords in From
+    type: from
+    pattern: "(?i)(secure|account|login|update|verify|alert)"
+    weight: 1
+    reason: From header contains generic phishing keywords
+
+  - name: Free mail Reply-To used
+    type: reply_to
+    pattern: "(?i)@(gmail\\.com|yahoo\\.com|protonmail\\.com)"
+    weight: 1
+    reason: Reply-To using public email service
+
+  - name: DMARC missing or fail (encoded rule)
+    type: dmarc
+    pattern: "^(none|fail)$"
+    weight: 2
+    reason: DMARC policy is none or fail → phishing risk
