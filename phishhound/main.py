@@ -16,7 +16,7 @@ def print_banner():
 |_____|  [___]|__][___][\__) )[___]|__]|____||____|'.__.'  '.__.'_/[___||__]'.__.;__] 
     """
     print("\n".join(line.center(term_width) for line in banner.splitlines()))
-    print("PhishHound++ – Email Header Phishing Analyzer".center(term_width))
+    print("PhishHound – Email Header Phishing Analyzer".center(term_width))
     print("Version 1.0 | Author: trailx9\n".center(term_width))
 
 
