@@ -44,7 +44,7 @@ phishhound/
 
 ```bash
 git clone https://github.com/Y-yug-S-shah/phishhound.git
-cd phishhound++
+cd phishhound
 pip install -r requirements.txt
 ```
 
