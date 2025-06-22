@@ -46,6 +46,7 @@ phishhound/
 git clone https://github.com/Y-yug-S-shah/phishhound.git
 cd phishhound
 pip install -r requirements.txt
+python3 main.py
 ```
 
 * **Python version**: `>=3.8`
