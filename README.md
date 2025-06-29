@@ -164,15 +164,6 @@ Reasons:
 
 ---
 
-### 🚧 Future improvements for further versions
-
-* [ ] `--explain`: Contextual explanations for each risk flag
-* [ ] Export reports as `.md` and `.json`
-* [ ] `.eml` file parsing using `email` module
-* [ ] Built-in IOC extraction (IPs, domains) for enrichment
-
----
-
 ### 📜 License
 
 This project is licensed under the [MIT License](LICENSE)
