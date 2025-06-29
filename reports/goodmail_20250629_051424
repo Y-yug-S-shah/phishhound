@@ -1,0 +1,19 @@
+PhishHound CLI - Email Header Analysis
+
+Parsed Header Info:
+- return_path: <alerts@bankofamerica.com>
+- from: Bank of America <alerts@bankofamerica.com>
+- reply_to: support@bankofamerica.com
+- received: Received: from mail.bankofamerica.com (mail.bankofamerica.com. [2606:4700::6810:5b73])
+- spf: pass
+- dkim: pass
+- dmarc: pass
+
+Risk Analysis Summary:
+- Base Score: 1
+- Rule Score: 1
+- Total Score: 2
+- Verdict: LOW
+- Reasons:
+  • From and Reply-To mismatch
+  • From header contains generic phishing keywords
