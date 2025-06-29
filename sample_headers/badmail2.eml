@@ -1,0 +1,22 @@
+Return-Path: <spoofed@secure-dropbox.com>
+Received: from unknownserver.fakehost.biz (unknownserver.fakehost.biz [203.0.113.77])
+        by mx.yourdomain.com with ESMTP id zkdq94
+        for <you@yourcompany.com>; Wed, 26 Jun 2025 14:33:00 +0000
+From: Dropbox Security <no-reply@dropbox.com>
+Reply-To: attacker@gmail.com
+To: you@yourcompany.com
+Subject: Urgent: Unusual Login Detected on Your Account
+Date: Wed, 26 Jun 2025 14:32:00 +0000
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+SPF: fail
+DKIM: fail
+DMARC: fail
+
+We detected a suspicious login attempt to your Dropbox account.
+Click the link below to verify your identity and secure your account:
+http://malicious-login-checker.com/dropbox/verify
+
+If you did not make this request, please ignore this message.
+
+- Dropbox Security Team
