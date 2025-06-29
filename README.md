@@ -110,13 +110,13 @@ rules:
 #### 📄 Analyze a single file:
 
 ```bash
-python3 main.py sample_headers/headers.txt
+python3 main2.py ../sample_headers/badmail2.eml --export-json
 ```
 
 #### 📂 Analyze all `.txt` files in a folder:
 
 ```bash
-python3 main.py sample_headers/
+python3 main2.py ../sample_headers/
 ```
 
 ---
