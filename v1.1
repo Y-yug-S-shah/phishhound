@@ -1,0 +1,29 @@
+### 🚀 What's New in v1.1
+
+This release significantly upgrades PhishHound’s usability, detection clarity, and compatibility for blue team analysts and SOC automation.
+
+#### ✅ New Features
+- **`.eml` File Support**  
+  Now accepts RFC-822 formatted `.eml` email files in addition to `.txt` headers.
+
+- **`--explain` Flag**  
+  Shows detailed reasoning behind each risk score or detection rule triggered.
+
+- **Export to File**
+  - `--export-json`: Saves analysis output as structured JSON.
+  - `--export-txt`: Saves report in analyst-readable plain text.
+  - Both outputs stored in `/phishhound/reports/`.
+
+- **`--manual` Flag**  
+  Custom usage guide replacing `--help`, ideal for CLI users.
+
+#### 🔧 Enhancements
+- Improved `argparse` logic (no path required for flags)
+- Better header field alignment
+- Clean CLI design and banner centering
+
+> 🧪 Tested on `.eml` phishing samples with spoofed headers, DKIM/SPF fails, and malformed return paths.
+
+---
+
+🛡 Built for SOC teams and blue teamers
