@@ -1,0 +1,22 @@
+PhishHound CLI - Email Header Analysis
+
+Parsed Header Info:
+- return_path: <spoofed@secure-dropbox.com>
+- received: Received: from unknownserver.fakehost.biz (unknownserver.fakehost.biz [203.0.113.77])
+- from: Dropbox Security <no-reply@dropbox.com>
+- reply_to: attacker@gmail.com
+- spf: none
+- dkim: none
+- dmarc: none
+
+Risk Analysis Summary:
+- Base Score: 5
+- Rule Score: 3
+- Total Score: 8
+- Verdict: HIGH
+- Reasons:
+  • DMARC missing or failed
+  • Return-Path and From mismatch
+  • From and Reply-To mismatch
+  • Reply-To using public email service
+  • DMARC policy is none or fail → phishing risk

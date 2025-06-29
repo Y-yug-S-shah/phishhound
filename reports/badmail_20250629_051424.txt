@@ -1,0 +1,24 @@
+PhishHound CLI - Email Header Analysis
+
+Parsed Header Info:
+- return_path: <no-reply@secure-verify-online.xyz>
+- from: "Dropbox Security Alert" <no-reply@dropbox.com>
+- reply_to: verify@secure-verify-online.xyz
+- received: Received: from mail.secure-verify-online.xyz (mail.secure-verify-online.xyz. [198.51.100.45])
+- spf: fail
+- dkim: fail
+- dmarc: none
+
+Risk Analysis Summary:
+- Base Score: 11
+- Rule Score: 5
+- Total Score: 16
+- Verdict: HIGH
+- Reasons:
+  • SPF failed
+  • DKIM failed
+  • DMARC missing or failed
+  • Return-Path and From mismatch
+  • From and Reply-To mismatch
+  • Return-Path has suspicious newly registered TLD/domain
+  • DMARC policy is none or fail → phishing risk

@@ -1,0 +1,22 @@
+PhishHound CLI - Email Header Analysis
+
+Parsed Header Info:
+- received: Received: by 2002:ab3:5a8a:0:b0:2b1:923d:8a68 with SMTP id l10csp3321111lte;
+- received: Received: from m201-185.mailgun.net (m201-185.mailgun.net. [161.38.201.185])
+- received: Received: by d0bef8d9f533 with HTTP id 6852bf6e24019a213dac479e; Wed, 18 Jun 2025 13:30:20 GMT
+- dkim: pass
+- spf: pass
+- dmarc: pass
+- return_path: <bounce+a921fe.4d1858-newcard.6969=gmail.com@mg2.substack.com>
+- from: "Darwin @ TCP" <cybersecuritymarketpulse@substack.com>
+- reply_to: "Darwin @ TCP" <reply+2qz2gs&4zeebh&&4f849ba1c3ffcf8bd93ad248ec005bbe78b67fc034f2055f09456031f75d9101@mg1.substack.com>
+
+Risk Analysis Summary:
+- Base Score: 4
+- Rule Score: 0
+- Total Score: 4
+- Verdict: MEDIUM
+- Reasons:
+  • Return-Path and From mismatch
+  • From and Reply-To mismatch
+  • Multiple Received headers
